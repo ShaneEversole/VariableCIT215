@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <p id = "Finalbill"><p>
+
+</body>
+<script>
+    var totalbill  = parseFloat(prompt("Input your Bill $"))
+    var tax = parseFloat(0.07);
+    var taxed = totalbill * tax
+    var tip = parseFloat(0.15);
+    var tiptotal = tip * taxed
+    var taxtip = taxed + tiptotal
+    var final = totalbill + taxtip
+
+
+    var FinalbillPara = document.querySelector("#Finalbill")
+    FinalbillPara.innerText = "Final bill total is $" + final
+
+    console.log(" the total bill is " + totalbill )
+    console.log(" the total tax is " + taxed)
+    console.log(" the total of the tip is " + tiptotal)
+    console.log( " the total of the tax and tip is " + taxtip)
+    console.log(" the total end bill is "  + final)
+</script>
+</html>
